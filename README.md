@@ -1,1 +1,11 @@
-# TerraAI - Full Fixed Starter\nRun: npm install && npm run dev\nFill .env with your values.\n
+# Project AI Website with NextJS and Typescript
+
+## Installation
+`bash
+npm install
+`
+
+## Run
+`bash
+npm run dev
+`
