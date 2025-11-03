@@ -1,4 +1,4 @@
-# Project AI Website with NextJS and Typescript
+# **Project AI Website with NextJS and Typescript**
 
 ## Installation
 `bash
