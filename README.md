@@ -1,6 +1,1 @@
-# PROJECT ARTIFICIAL INTELLEGENCE WEBSITE WITH NEXT JS
-
-`bash
-npm install
-npm run dev
-`
+# TerraAI - Full Fixed Starter\nRun: npm install && npm run dev\nFill .env with your values.\n

@@ -1,0 +1,3 @@
+import { NextResponse } from 'next/server'
+import Twilio from 'twilio'
+export async function POST(req){ const { phone } = await req.json(); if (!phone) return NextResponse.json({ message:'phone required' }, { status:400 }); const sid = process.env.TWILIO_ACCOUNT_SID || 'ACxxxxxxxx'; const token = process.env.TWILIO_AUTH_TOKEN || 'tok'; const svc = process.env.TWILIO_SERVICE_SID || 'VAXXXXX'; const client = Twilio(sid, token); try { const v = await client.verify.v2.services(svc).verifications.create({ to: phone, channel: 'sms' }); return NextResponse.json({ status: v.status }) } catch (e) { return NextResponse.json({ message:'twilio error', error: String(e) }, { status:500 }) } }
