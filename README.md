@@ -1,1 +1,6 @@
-# project-ai
+# PROJECT ARTIFICIAL INTELLEGENCE WEBSITE WITH NEXT JS
+
+`bash
+npm install
+npm run dev
+`
